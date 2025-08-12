@@ -11,4 +11,13 @@ export interface Product {
   };
 }
 
+export interface CartItem {
+  id: number;
+  title: string;
+  quantity: number;
+  price: number;
+}
+
 export type Category = string;
+
+
