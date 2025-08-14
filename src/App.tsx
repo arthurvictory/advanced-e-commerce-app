@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
+import NavigationBar from "./components/Navigation";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ProductProvider } from "./context/ProductContext";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -12,6 +13,7 @@ function App() {
     <QueryClientProvider client={client}>
       <ProductProvider>
         <BrowserRouter>
+          <NavigationBar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/profile" element={<Profile />} />

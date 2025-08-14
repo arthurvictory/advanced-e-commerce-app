@@ -16,6 +16,7 @@ export interface CartItem {
   title: string;
   quantity: number;
   price: number;
+  image: string;
 }
 
 export type Category = string;

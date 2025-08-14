@@ -11,7 +11,7 @@ const CartItems = () => {
   const dispatch = useDispatch<AppDispatch>();
 
   return (
-    <div className="d-flex flex-column align-items-center shadow gap-3 col-md-2 p-3">
+    <div className="d-flex flex-column align-items-center shadow gap-3 col-md-3 p-3">
       <h1>Cart:</h1>
       {cart.map((item) => (
         <div key={item.id}>
@@ -19,18 +19,11 @@ const CartItems = () => {
           <p>
             {item.title} - Qty: {item.quantity}
           </p>
+          <button onClick={() => dispatch(updateQuantity({ id: item.id, quantity: item.quantity - 1 }))}> - </button>
           <button onClick={() => dispatch(removeFromCart(item.id))}>
             Remove from cart
           </button>
-          <button
-            onClick={() =>
-              dispatch(
-                updateQuantity({ id: item.id, quantity: item.quantity + 1 })
-              )
-            }
-          >
-            +1
-          </button>
+          <button onClick={() => dispatch(updateQuantity({ id: item.id, quantity: item.quantity + 1 }))}> + </button>
         </div>
       ))}
       <button onClick={() => dispatch(clearCart())}>Clear the cart</button>
