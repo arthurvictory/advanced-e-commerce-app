@@ -7,6 +7,7 @@ This is my React-TypeScript project for an Advanced E-Commerce Website
 If this is your first time to run the program please download all the files in this repository to run.
 
 1. Click on the green Code button first.
+
 ![green code button](https://i.imgur.com/zasLMAY.png)
 
 2. A new little window will pop up and you will click on download ZIP.
