@@ -1,54 +1,32 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite Advanced E-Commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my React-TypeScript project for an Advanced E-Commerce Website
 
-Currently, two official plugins are available:
+## Instructions on how to run the project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+If this is your first time to run the program please download all the files in this repository to run.
 
-## Expanding the ESLint configuration
+1. Click on the green Code button first.
+![Green Code Button][https://imgur.com/zasLMAY]
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+2. A new little window will pop up and you will click on download ZIP.
+![Window with Download Zip][https://imgur.com/30k0xVd]
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+3. Once file has downloaded, open the zip file in your computer then extract all files to your desktop.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+4. When files are downloaded and extracted, open up the folder in your favorite IDE and in the terminal launch the program with:
+```npm run dev```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+5. Navigate website as usual.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Features of Advanced E-commerce website
+
+1. The website has a category filter to show just the category you want to look at and all its items.
+
+2. You can add the items you wish to with a simple click of a button.
+
+3. Once the items have been added to the cart, you can view the cart by clicking on the top cart button link in the navigation bar.
+
+4. All items will be showing in the shopping cart and items are dynamically functioning with the price and qty of items on the right hand side of the items page.
+
+5. Upon checkout, you will receive an alert that the cart has been cleared and will be redirected to a thank you page as confirmation.
