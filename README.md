@@ -7,10 +7,10 @@ This is my React-TypeScript project for an Advanced E-Commerce Website
 If this is your first time to run the program please download all the files in this repository to run.
 
 1. Click on the green Code button first.
-<img src="https://imgur.com/zasLMAY" alt="Green Code Button" />
+![green code button](https://imgur.com/zasLMAY)
 
 2. A new little window will pop up and you will click on download ZIP.
-![https://imgur.com/30k0xVd]
+![Download button](https://imgur.com/30k0xVd)
 
 3. Once file has downloaded, open the zip file in your computer then extract all files to your desktop.
 
