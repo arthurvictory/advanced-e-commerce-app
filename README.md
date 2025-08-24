@@ -11,6 +11,7 @@ If this is your first time to run the program please download all the files in t
 ![green code button](https://i.imgur.com/zasLMAY.png)
 
 2. A new little window will pop up and you will click on download ZIP.
+
 ![Download button](https://i.imgur.com/30k0xVd.png)
 
 3. Once file has downloaded, open the zip file in your computer then extract all files to your desktop.
