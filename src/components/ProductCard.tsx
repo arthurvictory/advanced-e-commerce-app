@@ -15,7 +15,7 @@ const ProductCard:React.FC<{product: Product}> = ({product}) => {
   return (
     <>
       <div className="align-items-center gap-3 col-md-3 p-3">
-        <Card className="justify-content-center align-items-center p-1" border="light" style={{  width: "25rem" }}>
+        <Card className="justify-content-center shadow align-items-center p-1" border="dark" style={{  width: "25rem" }}>
           <Card.Img
             variant="top"
             src={product.image}

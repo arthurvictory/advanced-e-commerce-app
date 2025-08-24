@@ -14,18 +14,22 @@ const initialState: CartState = {
   items: initialCart,
 };
 
+//added functionality to cart actions in the slice
 const cartSlice = createSlice({
   name: 'cart',
   initialState,
   reducers: {
+    //Adds item to cart functionality
     addToCart(state, action: PayloadAction<CartItem>) {
       state.items.push(action.payload);
       saveToSession("cart", state.items);
     },
+    //removes from the cart functionality
     removeFromCart(state, action: PayloadAction<number>) {
       state.items = state.items.filter((item) => item.id !== action.payload);
       saveToSession("cart", state.items);
     },
+    //Updates the cart functionality
     updateQuantity(
       state, action: PayloadAction<{ id: number; quantity: number }>) {
         const { id, quantity } = action.payload;
@@ -38,10 +42,10 @@ const cartSlice = createSlice({
             item.quantity = quantity;
           }
         }
-
+        //Saves the cart to be referred to when looking at cart page
         saveToSession('cart', state.items)
       },
-
+      //empties the cart completely
     clearCart(state) {
       state.items = [];
       saveToSession("cart", []);
@@ -49,6 +53,8 @@ const cartSlice = createSlice({
   },
 });
 
+
+//These exports empties the cart if the "-" button is pressed and it reaches 0 quantity
 export const selectCartItems = (state: RootState) => state.cart.items;
 
 export const selectTotalQuantity = (state: RootState): number =>
